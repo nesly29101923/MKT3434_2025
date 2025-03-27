@@ -1,4 +1,4 @@
-# ⚙️ MKT3434_2025
+# 🧠 MKT3434 Machine Learning GUI
 
 **MKT3434 Course of Dept. Mechatronics Eng. at YTU instructed by Ertugrul Bayraktar**
 
@@ -6,29 +6,52 @@
 
 ## 🚀 Overview
 
-This repository provides a base GUI framework for students to develop and integrate machine learning methods. The GUI is built using PyQt6 and supports various classical machine learning and deep learning techniques. Students will extend this GUI by adding necessary functionalities over time.
+This repository provides an advanced GUI framework for exploring and implementing various machine learning algorithms. Built with PyQt6, the GUI offers an intuitive interface for data loading, preprocessing, model training, and visualization. The application supports both classical machine learning techniques and deep learning approaches.
 
 ---
 
-## 📚 Long-Term Homework Instructions
+## ✨ Key Features
 
-Students are required to modify and enhance this GUI incrementally every three weeks. The objective is to build a fully functional and improved machine learning GUI.
+### 📊 Data Management
+- **Multiple Dataset Options**: Load built-in datasets (Iris, Breast Cancer, Digits, etc.) or custom CSV files
+- **Missing Value Handling**: Comprehensive solutions for handling missing data:
+  - Mean Imputation
+  - Median Imputation
+  - Interpolation
+  - Forward Fill
+  - Backward Fill
+- **Data Scaling**: Various scaling methods including Standard, Min-Max, and Robust scaling
+- **Missing Data Visualization**: Interactive visualization of missing data patterns
 
-### 🎯 Key Requirements:
+### 🧮 Classical Machine Learning Algorithms
+- **Regression**:
+  - Linear Regression
+  - SGD Regression with configurable loss functions
+- **Classification**:
+  - Logistic Regression
+  - Support Vector Machines with enhanced kernel options
+  - Decision Trees
+  - Random Forests
+  - K-Nearest Neighbors
+  - Naive Bayes with customizable priors
+  - SGD Classifier with configurable loss functions
 
-*   **Insert Necessary Methods:** Integrate missing machine learning methods within the provided GUI framework.
-*   **Enhance the GUI:** The default interface is provided, but students are encouraged to improve usability and design.
-*   **Ensure Data and Method Appropriateness:** The datasets and algorithms should be compatible within the GUI structure.
-*   **Implement Training and Testing Processes:** Correctly implement model training and evaluation workflows.
-*   **Regular Submissions:** Submit updates every three weeks through Google Classroom for this course.
+### 🔄 Advanced Model Training
+- **Loss Function Selection**:
+  - Regression: MSE, MAE, Huber Loss
+  - Classification: Cross-Entropy, Hinge Loss
+- **Hyperparameter Tuning**: Configure model-specific parameters through the GUI
+- **Performance Metrics**: Automatic calculation and display of relevant metrics
 
----
+### 🧠 Deep Learning
+- **Neural Network Design**: Interactive layer-by-layer network construction
+- **Layer Types**: Support for Dense, Conv2D, MaxPooling2D, Flatten, and Dropout layers
+- **Training Configuration**: Customizable batch size, epochs, and learning rate
 
-## 🤝 Repository and Collaboration
-
-Students should fork this repository and develop their versions.
-
-Regular commits and documentation updates are expected.
+### 📈 Visualization
+- **Model Performance**: Visualize model predictions and performance metrics
+- **Training History**: Plot accuracy and loss curves for neural networks
+- **Data Exploration**: Visualize dataset characteristics and patterns
 
 ---
 
@@ -37,10 +60,58 @@ Regular commits and documentation updates are expected.
 ### ⚙️ Prerequisites:
 
 Ensure you have the following installed:
-
-*   Python 3.8+
+- Python 3.8+
 
 ### 📦 Required dependencies:
 
 ```bash
-pip install numpy pandas matplotlib PyQt6 scikit-learn tensorflow torch torchvision torchaudio opencv-python opencv-contrib-python scipy fastai kornia
+pip install numpy pandas matplotlib PyQt6 scikit-learn tensorflow scipy
+```
+
+### 🚀 Running the Application:
+
+```bash
+python mali.py
+```
+
+---
+
+## 💡 Usage Guide
+
+1. **Load Data**: Select a dataset from the dropdown or load a custom CSV file
+2. **Preprocess Data**: Apply scaling and handle missing values if needed
+3. **Select Algorithm**: Choose a machine learning algorithm from the tabs
+4. **Configure Parameters**: Set appropriate parameters for the selected algorithm
+5. **Train Model**: Click the "Train" button for the selected algorithm
+6. **Analyze Results**: View performance metrics and visualizations
+
+---
+
+## 🔧 Recent Enhancements
+
+- **Enhanced SVM Implementation**: Added support for different kernels and hyperparameters
+- **Advanced Naive Bayes**: Implemented customizable priors and detailed model explanations
+- **Missing Value Handling**: Added comprehensive tools for detecting and handling missing data
+- **Loss Function Selection**: Implemented configurable loss functions for applicable algorithms
+
+---
+
+## 📚 Educational Purpose
+
+This GUI is designed as an educational tool for exploring machine learning concepts. It allows users to:
+- Understand the impact of different preprocessing techniques
+- Compare performance across various algorithms
+- Visualize how different parameters affect model behavior
+- Gain practical experience with machine learning workflows
+
+---
+
+## 🤝 Contributing
+
+Contributions to improve the functionality, usability, or documentation of this application are welcome!
+
+---
+
+## 📜 License
+
+This project is part of the MKT3434 course at YTU and is intended for educational purposes.
